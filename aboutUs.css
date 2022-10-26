@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+header{
+    position:sticky;
+    top:0;
+    width:100%;
+}
+body{
+    height:1000px;
+}
+#icon1,#icon2,#icon3 {
+    width: 100px;
+    height: auto;
+    transition: all .5s ease-out;
+}
+
+#icon1:hover,#icon2:hover,#icon3:hover {
+    width: 125px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: pink;
+    width: 100%;
+    height: 150px;
+}
+
+#test {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: -40px 20% 0 20%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 15% 0 15%;
+    text-align: center;
+}

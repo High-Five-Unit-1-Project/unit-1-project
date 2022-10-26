@@ -1,11 +1,7 @@
-@font-face {
-  font-family: 'fashion';
-  src: url("./Fashion_Drunk.ttf") format("ttf");
-}
 
 * {
     margin: 0;
-    font-family:fashion;
+    font-family: monospace;
 }
 
 
@@ -25,7 +21,8 @@ header {
 
 body {
     height: 100%;
-    background-image: linear-gradient(to bottom right, orange,rgb(250,86,48));
+    /*background-image: linear-gradient(to bottom right, orange,rgb(250,86,48));*/
+    background-color: rgb(235,28,35);
     color:white;
 }
 

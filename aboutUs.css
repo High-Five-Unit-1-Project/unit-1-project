@@ -21,8 +21,8 @@ header {
 
 body {
     height: 100%;
-    /*background-image: linear-gradient(to bottom right, orange,rgb(250,86,48));*/
-    background-color: rgb(235,28,35);
+    background-image: linear-gradient(to top right, rgb(119,8,22),rgb(255,0,45),rgb(119,8,22));
+    /*background-color: rgb(235,28,35);*/
     color:white;
 }
 
@@ -145,12 +145,12 @@ display:flex;
 }
 
 @keyframes swipe {
-    from {
+    0% {
         color: rgba(0, 0, 0, 0);
         padding-left: 0;
     }
 
-    to {
+    100% {
         color: rgba(0, 0, 0, 1);
         padding-left: 10px;
     }

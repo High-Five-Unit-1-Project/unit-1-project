@@ -65,6 +65,7 @@ label .menu {
     display: grid;
     padding-top: 256px;
   }
+
   label .hamburger {
     position: absolute;
     top: 135px;

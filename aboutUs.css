@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'fashion';
+  src: url("./Fashion_Drunk.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    font-family:fashion;
+}
+
+
+
+#ham {
+    height: auto;
+    background-color: black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+#icon1,
+#icon2,
+#icon3 {
+    width: 100px;
+    height: auto;
+    transition: all .5s ease-out;
+}
+
+#icon1:hover,
+#icon2:hover,
+#icon3:hover {
+    width: 125px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: xx-large;
+   /* background-color: pink;*/
+   background-image: linear-gradient(to top right, hotpink, pink);
+    width: 100%;
+    height: 125px;
+}
+
+figcaption {
+    text-align: center;
+    transition: all .5s ease-out;
+    color: rgba(0, 0, 0, 0);
+}
+
+figure:hover figcaption {
+    color: rgba(0, 0, 0, 1);
+}
+
+#test {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: -30px 20% 0 20%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 15% 50px 15%;
+}
+
+article h1{
+    font-size: x-large;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 80px;
+    background-color: pink;
+}
+
+#sec1 {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+#igFollow {
+    padding: 0 5%;
+}
+
+a{
+    text-decoration: none;
+    color:rgba(0,0,0,0);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#igList,
+#igText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#ig{
+display:flex;
+}
+
+#ig:hover #igText{
+    animation:swipe 1s forwards;
+}
+
+#ig:hover #igText a{
+    color:rgba(0,0,0,1);
+}
+
+#igText {
+    color: rgba(0, 0, 0, 0);
+}
+
+#midImg {
+    padding: 20% 0;
+}
+
+#sec2 {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    padding-right:8%;
+}
+
+@keyframes swipe {
+    from {
+        color: rgba(0, 0, 0, 0);
+        padding-left: 0;
+    }
+
+    to {
+        color: rgba(0, 0, 0, 1);
+        padding-left: 10px;
+    }
+}
+

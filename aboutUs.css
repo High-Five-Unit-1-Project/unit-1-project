@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+   /* font-family: monospace; */
+} 
+
+#ham {
+    height: auto;
+    background-color: rgb(74,161,204);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));
+    /*background-color: rgb(235,28,35);*/
+    color: white;
+}
+
+#icon1,
+#icon2,
+#icon3 {
+    width: 100px;
+    height: auto;
+    transition: all .5s ease-out;
+}
+
+#icon1:hover,
+#icon2:hover,
+#icon3:hover {
+    width: 125px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    background-color: black;
+    /*background-image: linear-gradient(to top right, hotpink, pink);*/
+    width: 100%;
+    height: 125px;
+}
+
+figcaption {
+    text-align: center;
+    transition: all .5s ease-out;
+    color: rgba(225, 225, 225, 0);
+}
+
+figure:hover figcaption {
+    color: rgba(225, 225, 225, 1);
+}
+
+#test {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: -30px 20% 0 20%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 15% 50px 15%;
+}
+
+article h1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+/*footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}*/
+
+
+.footer-basic {
+    display: flex;
+    padding: 10px 0;
+    background-color: black;
+    height: 80px;
+    font-size: 14px;
+}
+
+.footer-basic ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer-basic li {
+    padding-right: 10px;
+}
+
+.list-inline-item {
+    font-size: 14px;
+}
+
+a {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer {
+    margin: 10px;
+    width: 50%;
+}
+
+#sec1 {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+#igFollow {
+    padding: 0 5%;
+}
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: rgba(250, 250, 250, 0);*/
+/*}*/
+
+/*a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*#igList,*/
+/*#igText {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#ig {*/
+/*    display: flex;*/
+/*}*/
+
+/*#ig:hover #igText {*/
+/*    animation: swipe 1s forwards;*/
+/*}*/
+
+/*#ig:hover #igText a {*/
+/*    color: rgba(250, 250, 250, 1);*/
+/*}*/
+
+/*#igText {*/
+/*    color: rgba(0, 0, 0, 0);*/
+/*}*/
+
+/*#midImg {*/
+/*    padding: 20% 0;*/
+/*}*/
+
+#sec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 8%;
+}
+
+@keyframes swipe {
+    0% {
+        color: rgba(0, 0, 0, 0);
+        padding-left: 0;
+    }
+
+    100% {
+        color: rgba(0, 0, 0, 1);
+        padding-left: 10px;
+    }
+}

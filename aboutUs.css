@@ -1,10 +1,7 @@
-
 * {
     margin: 0;
-    font-family: monospace;
-}
-
-
+   /* font-family: monospace; */
+} 
 
 #ham {
     height: auto;
@@ -21,9 +18,9 @@ header {
 
 body {
     height: 100%;
-    background-image: linear-gradient(to top right, rgb(119,8,22),rgb(255,0,45),rgb(119,8,22));
+    background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));
     /*background-color: rgb(235,28,35);*/
-    color:white;
+    color: white;
 }
 
 #icon1,
@@ -44,10 +41,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     font-size: xx-large;
     background-color: black;
-   /*background-image: linear-gradient(to top right, hotpink, pink);*/
+    /*background-image: linear-gradient(to top right, hotpink, pink);*/
     width: 100%;
     height: 125px;
 }
@@ -73,20 +70,58 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3% 15% 50px 15%;
+    margin: 0% 15% 50px 15%;
 }
 
-article h1{
+article h1 {
     font-size: x-large;
     text-align: center;
 }
 
-footer {
+/*footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 80px;
     background-color: black;
+}*/
+
+
+.footer-basic {
+    display: flex;
+    padding: 10px 0;
+    background-color: black;
+    height: 80px;
+    font-size: 14px;
+}
+
+.footer-basic ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.footer-basic li {
+    padding-right: 10px;
+}
+
+.list-inline-item {
+    font-size: 14px;
+}
+
+a {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer {
+    margin: 10px;
+    width: 50%;
 }
 
 #sec1 {
@@ -99,49 +134,49 @@ footer {
     padding: 0 5%;
 }
 
-a{
-    text-decoration: none;
-    color:rgba(250,250,250,0);
-}
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: rgba(250, 250, 250, 0);*/
+/*}*/
 
-a:hover{
-    text-decoration: underline;
-}
+/*a:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
 
-#igList,
-#igText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-}
+/*#igList,*/
+/*#igText {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    cursor: pointer;*/
+/*}*/
 
-#ig{
-display:flex;
-}
+/*#ig {*/
+/*    display: flex;*/
+/*}*/
 
-#ig:hover #igText{
-    animation:swipe 1s forwards;
-}
+/*#ig:hover #igText {*/
+/*    animation: swipe 1s forwards;*/
+/*}*/
 
-#ig:hover #igText a{
-    color:rgba(250,250,250,1);
-}
+/*#ig:hover #igText a {*/
+/*    color: rgba(250, 250, 250, 1);*/
+/*}*/
 
-#igText {
-    color: rgba(0, 0, 0, 0);
-}
+/*#igText {*/
+/*    color: rgba(0, 0, 0, 0);*/
+/*}*/
 
-#midImg {
-    padding: 20% 0;
-}
+/*#midImg {*/
+/*    padding: 20% 0;*/
+/*}*/
 
 #sec2 {
-    display:flex;
-    flex-direction:column;
-    align-items:flex-end;
-    justify-content:center;
-    padding-right:8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 8%;
 }
 
 @keyframes swipe {
@@ -155,4 +190,3 @@ display:flex;
         padding-left: 10px;
     }
 }
-

@@ -25,7 +25,7 @@ main {
 
 .title {
     text-align: center;
-    background-color: red;
+    background-color: rgb(255,0,0);
     margin: 150px 40px 40px;
     font-weight: bolder;
     border-radius: 20px;
@@ -38,12 +38,57 @@ main {
 
 .titletwo {
     text-align: center;
-    background-color: red;
+    background-color: rgb(255,0,0);
     margin: 40px;
     font-weight: bolder;
     border-radius: 20px;
 }
 
+
+/*.footer-basic {*/
+/*    display: flex;*/
+/*    padding: 10px 0;*/
+/*    background-color: orange;*/
+/*    height: 80px;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.footer-basic ul {*/
+/*    display: flex;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*    text-align: center;*/
+/*    line-height: 1;*/
+/*    margin-bottom: 5px;*/
+/*    font-weight: bold;*/
+/*    color: black;*/
+/*}*/
+
+/*.footer-basic li {*/
+/*    padding: 0 10px;*/
+/*}*/
+
+/*.list-inline-item {*/
+/*    font-size: 14px;*/
+ 
+/*}*/
+
+/*.list-inline {*/
+/*    flex-direction: row;*/
+/*    margin: 10px;*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*a {*/
+/*    color: black;*/
+/*    font-size: 14px;*/
+/*    font-weight: normal;*/
+/*}*/
+
+/*footer {*/
+/*    margin: 10px;*/
+/*    width: 50%;*/
+/*}*/
 
 .footer-basic {
     display: flex;
@@ -52,39 +97,26 @@ main {
     height: 80px;
     font-size: 14px;
 }
-
 .footer-basic ul {
     display: flex;
     padding: 0;
     list-style: none;
     text-align: center;
-    line-height: 1;
     margin-bottom: 5px;
     font-weight: bold;
     color: black;
 }
-
 .footer-basic li {
-    padding: 0 10px;
+    padding-right: 10px;
 }
-
 .list-inline-item {
     font-size: 14px;
- 
 }
-
-.list-inline {
-    flex-direction: row;
-    margin: 10px;
-    font-weight: normal;
-}
-
 a {
     color: black;
     font-size: 14px;
     font-weight: normal;
 }
-
 footer {
     margin: 10px;
     width: 50%;

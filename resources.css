@@ -70,7 +70,18 @@ body {
 .card:hover {
     border-radius: 0;
     box-shadow: 10px 10px black;
+    width:27%;
 }
+
+button{
+    transition-duration: .3s;
+}
+
+button:hover{
+    box-shadow: 5px 5px;
+    border-radius: 0;
+}
+
 
 .preview {
     display: flex;
@@ -100,6 +111,7 @@ body {
 .logo {
     width: 100px;
 }
+
 
 footer {
     display: flex;
@@ -204,9 +216,10 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        border-radius: 10px;
         transition-duration: .3s;
         margin-bottom: 5%;
+        border-radius: 0;
+        box-shadow: 10px 10px black;
     }
 
     .card:hover {

@@ -35,12 +35,14 @@ a {
     position: fixed;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 .title {
     text-align: center;
     background-color: #60b922;
-    margin: 40px;
+    /*margin: 40px;*/
+    margin-bottom: 40px;
     font-weight: bolder;
     border-radius: 20px;
 }
@@ -50,8 +52,8 @@ a {
     background-color: #60b922;
     font-weight: bolder;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 h2 {

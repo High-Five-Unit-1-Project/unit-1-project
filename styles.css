@@ -48,15 +48,15 @@ a {
 .title {
     text-align: center;
     background-color: rgb(255, 0, 0);
-    margin-top: 10px;
-    margin-bottom: 35px;
+    /*margin-top: 10px;*/
+    margin-bottom: 40px;
     font-weight: bolder;
     border-radius: 20px;
 }
 
 
 h2 {
-    margin: 40px;
+    margin-top: 5px;
     letter-spacing: -.1rem;
     font-weight: bolder;
     width: 100%;

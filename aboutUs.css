@@ -67,7 +67,7 @@ figure:hover figcaption {
     color: rgba(225, 225, 225, 1);
 }
 
-#test {
+#mag {
     display: flex;
     justify-content: center;
     justify-content: space-around;

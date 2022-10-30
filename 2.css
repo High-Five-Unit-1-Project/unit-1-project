@@ -15,19 +15,23 @@ main {
 
 label {
     display: flex;
-    margin-top: 150px;
-    justify-content: center
+    margin-top: 130px;
+    justify-content: center;
 }
 
 
 .menu {
     justify-content: center;
+    font-family: normal;
+    color: black;
+
 }
 
 a {
     color: black;
     font-weight: normal;
 }
+
 
 .clock {
     width: 100%;
@@ -71,7 +75,7 @@ h4 {
     width: 900px;
     font-weight: lighter;
     font-size: 1.3em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -84,7 +88,7 @@ h4 {
 .imageone {
     align-self: center;
     height: auto;
-    width: 900px;
+    width: 1200px;
     margin: 30px;
 }
 
@@ -92,7 +96,7 @@ h4 {
     justify-content: center;
     align-items: center;
     margin: 30px;
-    width: 900px;
+    width: 1200px;
     height: auto;
 }
 
@@ -104,11 +108,69 @@ h4 {
     width: 650px;
 }
 
+/*figcaption {*/
+/*    font-weight: bold;*/
+/*}*/
+
 .animals {
     width: 900px;
     height: auto;
 }
 
+.container{
+    width: 750px;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    /*transform: translate(-50%,-50%);*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    overflow: hidden;
+    /*border: 10px solid #ffffff;*/
+    /*border-radius: 20px;*/
+    box-shadow: -1px 5px 15px black;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+/*Area of images*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+img{
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
 
 
 footer {
@@ -131,12 +193,19 @@ footer {
     color: white;
 }
 
+
 #sec2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0 5% 10px 5%;
+}
+
+
+#currentNav {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #currentNav {

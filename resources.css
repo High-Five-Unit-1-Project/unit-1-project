@@ -27,8 +27,8 @@ header {
 
 body {
     height: 100%;
-    background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));
-    color: white;
+    background-color: #EBE8E3;
+    color: black;
 }
 
 #banner {
@@ -177,11 +177,7 @@ footer {
         width: 100%;
     }
 
-    body {
-        height: 100%;
-        background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));
-        color: white;
-    }
+    
 
     #banner {
         display: flex;

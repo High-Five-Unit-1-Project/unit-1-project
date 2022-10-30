@@ -25,8 +25,8 @@ header {
 
 body {
     height: 100%;
-    background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));
-    color: white;
+    /*background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));*/
+    background-color: #EBE8E3;
 }
 
 #icon1,
@@ -57,11 +57,11 @@ body {
 figcaption {
     text-align: center;
     transition: all .5s ease-out;
-    color: rgba(225, 225, 225, 0);
+    color: rgba(0, 0, 0, 0);
 }
 
 figure:hover figcaption {
-    color: rgba(225, 225, 225, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 #mag {
@@ -98,6 +98,7 @@ footer {
     height: auto;
     background-color: black;
     flex-wrap: wrap;
+    color:white;
 }
 
 #currentNav {
@@ -118,8 +119,6 @@ footer {
     cursor: pointer;
     color: white;
 }
-
-
 
 #sec2 {
     display: flex;

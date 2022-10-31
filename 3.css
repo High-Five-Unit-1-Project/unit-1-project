@@ -305,4 +305,9 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    
+    ul {
+        margin-top: 100px;
+    }
 }

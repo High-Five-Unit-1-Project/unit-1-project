@@ -32,7 +32,13 @@ label {
 a {
     color: black;
     font-weight: normal;
+    text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 .clock {
     width: 100%;
@@ -187,9 +193,12 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: orange;
+    background-color: #9f948e;
 }
 
+blockquote, dl, figure, form, ol, p, pre, table, ul {
+    margin-bottom: 0;
+}
 
 
 #sec1 {
@@ -211,6 +220,7 @@ footer {
     align-items: flex-start;
     justify-content: center;
     padding: 0 5% 10px 5%;
+    color: white;
 }
 
 
@@ -225,3 +235,74 @@ footer {
         font-weight:bold;
         text-decoration: underline;
     }
+
+
+@media only screen and (max-width: 600px) {
+    
+     main {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 20px;
+    }
+
+    label {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+
+    .menu {
+        justify-content: center;
+    }
+
+
+    .clock {
+        width: 100%;
+        position: fixed;
+    }
+
+
+    .article {
+        justify-content: center;
+        margin: 40px;
+        flex-wrap: wrap;
+
+    }
+
+    .title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
+    
+    
+    
+    footer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+
+    #sec1 a {
+        padding-bottom: 3px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+}

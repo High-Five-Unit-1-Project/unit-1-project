@@ -1,8 +1,12 @@
 * {
     max-width: 100%;
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebe8e3;
 }
 
 
@@ -14,13 +18,23 @@ main {
 
 label {
     display: flex;
-    margin-top: 150px;
+    margin-top: 130px;
     justify-content: center;
 }
 
 
 .menu {
     justify-content: center;
+}
+
+a {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -32,29 +46,55 @@ label {
 
 .article {
     justify-content: center;
-    width: 800px;
-    font-size: 1.2em;
+    width: 900px;
     font-weight: lighter;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-bottom: 40px;
+
 }
 
 .title {
+    display: flex;
     text-align: center;
-    background-color: rgb(255,0,0);
-    margin-top: 15px;
-    margin-bottom: 35px;
+    justify-content: center;
+    background-color: rgb(255, 0, 0);
+    /*margin-top: 10px;*/
+    margin-bottom: 40px;
     font-weight: bolder;
     border-radius: 20px;
+    box-shadow: -1px 5px 15px black;
+    flex-direction: column;
 }
 
+
 h2 {
-    margin-bottom: 1rem;
+    justify-content: center;
+    margin: 10px;
     letter-spacing: -.1rem;
     font-weight: bolder;
+    width: 100%;
 }
 
 h4 {
-    margin-bottom: 1rem;
+    margin: 10px;
     font-weight: bolder;
+    width: 100%;
+
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: auto;
+}
+
+.imageone {
+    /*justify-content: center;*/
+    /*width: 900px;*/
+    /*height: auto;*/
+    margin: 40px;
 }
 
 
@@ -62,24 +102,34 @@ h4 {
     margin-bottom: 30px;
 }
 
+
 .titletwo {
     text-align: center;
-    background-color: rgb(255,0,0);
+    background-color: rgb(255, 0, 0);
     margin: 40px;
     font-weight: bolder;
     border-radius: 20px;
 }
 
 
-
-
 footer {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: orange;
+    background-color: #9f948e;
 }
+
+
+blockquote,
+dl,
+figure,
+form,
+ol,
+p {
+    margin-bottom: 0;
+}
+
 
 #sec1 {
     display: flex;
@@ -87,23 +137,131 @@ footer {
     justify-content: space-between;
     padding: 2% 5%;
 }
+
 #sec1 a {
     cursor: pointer;
     color: white;
 }
-/*#sec2 {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
+
 #sec2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0 5% 10px 5%;
+    color: white;
 }
 
-#currentNav{
-        font-weight:bold;
-        text-decoration: underline;
+
+
+#currentNav {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+#currentNav {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 20px;
     }
+
+    label {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+
+    .menu {
+        justify-content: center;
+    }
+
+
+    .clock {
+        width: 100%;
+        position: fixed;
+    }
+
+
+    .article {
+        justify-content: center;
+        margin: 40px;
+        flex-wrap: wrap;
+
+    }
+
+    .title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    h2 {
+        width: 80%;
+    }
+
+    h4 {
+        font-weight: bolder;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: auto;
+    }
+
+
+    .imageone {
+        justify-content: center;
+        height: auto;
+    }
+
+
+    .imagetwo {
+        juatify-content: center;
+    }
+
+    .titletwo {
+        text-align: center;
+        /*background-color: rgb(255, 0, 0);*/
+        margin: 40px;
+        /*font-weight: bolder;*/
+        /*border-radius: 20px;*/
+    }
+
+
+    footer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+
+    #sec1 a {
+        padding-bottom: 3px;
+        cursor: pointer;
+        color: white;
+    }
+}

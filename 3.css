@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #ebe8e3;
+}
+
 
 main {
     display: flex;
@@ -14,9 +18,8 @@ main {
 
 label {
     display: flex;
-    margin-top: 60px;
+    margin-top: 130px;
     justify-content: center;
-    font-family: normal;
 }
 
 
@@ -26,21 +29,46 @@ label {
     color: black;
 }
 
+a {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.clock {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
 .title {
     text-align: center;
     background-color: #60b922;
-    margin: 25px;
+    /*margin: 40px;*/
+    margin-bottom: 40px;
     font-weight: bolder;
     border-radius: 20px;
+    box-shadow: -1px 5px 15px black;
 }
+
 
 .titletwo {
     text-align: center;
     background-color: #60b922;
     font-weight: bolder;
     border-radius: 20px;
-    margin: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: -1px 5px 15px black;
 }
+
 
 h2 {
     margin: 1rem;
@@ -48,32 +76,51 @@ h2 {
     font-weight: bolder;
 }
 
+
 h4 {
     margin: 1rem;
     font-weight: bolder;
 }
 
 .article {
-    display: flex;
-    flex-flow: column;
     justify-content: center;
-    width: 800px;
+    align-items: center;
+    flex-flow: column;
+    width: 900px;
     font-weight: lighter;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    margin-bottom: 30px;
 }
+ 
+
+/*.imgdiv {*/
+/*    display: flex;*/
+/*}*/
 
 
-.image {
-    align-self: center;
-    max-width: 60%;
-    height: auto;
-}
+/*.img {*/
+/*    justify-content: center;*/
+/*    align-self: center;*/
+/*    width: 50%;*/
+/*    height: auto;*/
+/*}*/
 
 .imagetwo {
-    align-self: center;
-    max-width: 100%;
+    justify-content: center;
+    width: 900px;
     height: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
+
+
+/*.imagethree {*/
+/*    justify-content: center;*/
+/*    width: 900px;*/
+/*    align-self: center;*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*}*/
 
 
 h5 {
@@ -83,12 +130,74 @@ h5 {
 }
 
 
+.container{
+    width: 600px;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    /*transform: translate(-50%,-50%);*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: -1px 5px 15px black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+/*Area of images*/
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+img{
+    width: 100%;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+
+
 footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: orange;
+    background-color: #9f948e;
+}
+
+blockquote, dl, figure, form, ol, p, pre, table, ul {
+    margin-bottom: 0;
 }
 
 
@@ -111,9 +220,89 @@ footer {
     align-items: flex-start;
     justify-content: center;
     padding: 0 5% 10px 5%;
+    color: white;
 }
+
+
+
+#currentNav {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 #currentNav{
         font-weight:bold;
         text-decoration: underline;
     }
+
+
+@media only screen and (max-width: 600px) {
+    
+     main {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 20px;
+    }
+
+    label {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+
+    .menu {
+        justify-content: center;
+    }
+
+
+    .clock {
+        width: 100%;
+        position: fixed;
+    }
+
+
+    .article {
+        justify-content: center;
+        margin: 40px;
+        flex-wrap: wrap;
+
+    }
+
+    .title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
+    
+    
+    
+    footer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 5%;
+    }
+
+    #sec1 a {
+        padding-bottom: 3px;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+}

@@ -249,6 +249,9 @@ samp {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
 
+
+
+
 button,
 input,
 optgroup,
@@ -431,7 +434,7 @@ th {
 }
 
 #nav-bar {
-  height: 200px;
+  height: 51px;
   background-color: white;
   position: relative;
   display: flex;
@@ -450,7 +453,8 @@ label .menu {
 
 label .hamburger {
   position: absolute;
-  top: 135px;
+  top: 19px;
+  left: -13px;
   width: 30px;
   height: 2px;
   background: #000;
@@ -481,6 +485,7 @@ label input { display: none; }
 label input:checked + .menu {
   box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
   border-radius: 0;
+  background-color: white;
 }
 
 label input:checked + .menu .hamburger {
@@ -500,12 +505,14 @@ label input:checked + .menu .hamburger:before {
   top: 0;
 }
 
+
+
 label input:checked + .menu + ul { opacity: 1; }
 
 label ul {
   z-index: 200;
   position: absolute;
-  top: 50%;
+  top: -130px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -529,4 +536,13 @@ h1 {
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center;
+}
+
+.title {
+  text-align: center;
+    background-color: rgb(255, 0, 0);
+    font-weight: bolder;
+    border-radius: 7px;
+    margin: 15px;
+    box-shadow: -1px 5px 15px black
 }

@@ -97,15 +97,13 @@ footer {
     height: auto;
     background-color: #9F948E;
     flex-wrap: wrap;
-    color:white;
+    color: white;
 }
 
 #currentNav {
     font-weight: bold;
     text-decoration: underline;
 }
-
-
 
 #sec1 {
     display: flex;

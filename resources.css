@@ -219,6 +219,7 @@ footer {
     .card:hover {
         border-radius: 0;
         box-shadow: 10px 10px black;
+        width:75%;
     }
 
     .preview {

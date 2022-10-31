@@ -84,14 +84,14 @@ h4 {
 
 .article {
     justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    /*align-items: center;*/
+    /*flex-flow: column;*/
     width: 900px;
     font-weight: lighter;
     font-size: 1.3em;
     margin-bottom: 30px;
 }
- 
+
 
 /*.imgdiv {*/
 /*    display: flex;*/
@@ -130,7 +130,7 @@ h5 {
 }
 
 
-.container{
+.container {
     width: 600px;
     justify-content: center;
     align-self: center;
@@ -148,40 +148,47 @@ h5 {
 }
 
 /*Area of images*/
-.wrapper{
+.wrapper {
     width: 100%;
     display: flex;
     animation: slide 10s infinite;
 }
 
-img{
+img {
     width: 100%;
 }
 
 /*Animation activated by keyframes*/
-@keyframes slide{
-    0%{
+@keyframes slide {
+    0% {
         transform: translateX(0);
     }
-    25%{
+
+    25% {
         transform: translateX(0);
     }
-    30%{
+
+    30% {
         transform: translateX(-100%);
     }
-    50%{
+
+    50% {
         transform: translateX(-100%);
     }
-    55%{
+
+    55% {
         transform: translateX(-200%);
     }
-    75%{
+
+    75% {
         transform: translateX(-200%);
     }
-    80%{
+
+    80% {
         transform: translateX(-300%);
     }
-    100%{
+
+    100% {
         transform: translateX(-300%);
     }
 }
@@ -196,7 +203,15 @@ footer {
     background-color: #9f948e;
 }
 
-blockquote, dl, figure, form, ol, p, pre, table, ul {
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul {
     margin-bottom: 0;
 }
 
@@ -231,30 +246,39 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
 }
 
 
-#currentNav{
-        font-weight:bold;
-        text-decoration: underline;
-    }
+#currentNav {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 
 @media only screen and (max-width: 600px) {
-    
-     main {
+
+    html,
+    body {
+        justify-content: center;
+    }
+
+    main {
         display: flex;
         justify-content: center;
         align-content: center;
-        margin: 0 20px;
+        margin: 0 10px 0 10px;
+        width: 90%;
     }
 
     label {
         display: flex;
-        margin-top: 100px;
+        margin-top: 70px;
         justify-content: center;
+        align-content: center;
     }
 
 
     .menu {
         justify-content: center;
+        font-family: normal;
+        color: black;
     }
 
 
@@ -267,7 +291,8 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
     .article {
         justify-content: center;
         margin: 40px;
-        flex-wrap: wrap;
+        text-align: center;
+        /*flex-wrap: wrap;*/
 
     }
 
@@ -279,10 +304,39 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
         flex-wrap: wrap;
     }
 
-    
-    
-    
-    
+
+    .container {
+        display: flex;
+        max-width: 80%;
+        height: auto;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+        /*transform: translate(-50%,-50%);*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        overflow: hidden;
+        /*border: 10px solid #ffffff;*/
+        /*border-radius: 20px;*/
+        box-shadow: -1px 5px 15px black;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        /*    object-fit: fill;*/
+    }
+
+    /*Area of images*/
+    .wrapper {
+        width: 100%;
+        animation: slide 10s infinite;
+        object-fit: cover;
+    }
+
+    img {
+        width: 100%;
+        justify-content: center;
+    }
+
+
     footer {
         display: flex;
         width: 100%;
@@ -306,7 +360,7 @@ blockquote, dl, figure, form, ol, p, pre, table, ul {
 }
 
 @media only screen and (max-width: 1000px) {
-    
+
     ul {
         margin-top: 100px;
     }

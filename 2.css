@@ -82,8 +82,8 @@ h4 {
 
 .article {
     justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    /*align-items: center;*/
+    /*flex-flow: column;*/
     width: 900px;
     font-weight: lighter;
     font-size: 1.3em;
@@ -94,6 +94,7 @@ h4 {
 .stat {
     font-weight: bold;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 
@@ -249,8 +250,8 @@ ul {
 
 
 @media only screen and (max-width: 600px) {
-    
-    html, 
+
+    html,
     body {
         justify-content: center;
     }
@@ -258,15 +259,16 @@ ul {
     main {
         display: flex;
         justify-content: center;
-        /*align-content: center;*/
-        margin: 0 5%;
+        align-content: center;
+        margin: 0 10px 0 10px;
         width: 90%;
     }
 
     label {
         display: flex;
-        margin-top: 100px;
+        margin-top: 70px;
         justify-content: center;
+        align-content: center;
     }
 
 
@@ -283,9 +285,8 @@ ul {
     .article {
         justify-content: center;
         text-align: center;
-        aling-content: center;
         margin: 40px;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
     }
 
 
@@ -322,7 +323,7 @@ ul {
         margin-top: 10px;
         width: 100%;
     }
-    
+
     .stat {
         margin-top: 20px;
     }
@@ -350,7 +351,7 @@ ul {
         box-shadow: -1px 5px 15px black;
         margin-top: 15px;
         margin-bottom: 40px;
-    /*    object-fit: fill;*/
+        /*    object-fit: fill;*/
     }
 
     /*Area of images*/
@@ -389,7 +390,7 @@ ul {
 }
 
 @media only screen and (max-width: 1000px) {
-    
+
     ul {
         margin-top: 100px;
     }

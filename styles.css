@@ -26,6 +26,8 @@ label {
 
 .menu {
     justify-content: center;
+    font-family: normal;
+    color: black;
 }
 
 a {
@@ -50,7 +52,6 @@ a:hover {
     width: 900px;
     font-weight: lighter;
     font-size: 1.3em;
-    font-weight: lighter;
     margin-bottom: 40px;
 
 }
@@ -169,17 +170,24 @@ p {
 
 @media only screen and (max-width: 600px) {
 
+    html,
+    body {
+        justify-content: center;
+    }
+
     main {
         display: flex;
         justify-content: center;
         align-content: center;
-        margin: 0 20px;
+        margin: 0 10px 0 10px;
+        width: 90%;
     }
 
     label {
         display: flex;
-        margin-top: 100px;
+        margin-top: 70px;
         justify-content: center;
+        align-content: center;
     }
 
 
@@ -197,7 +205,7 @@ p {
     .article {
         justify-content: center;
         margin: 40px;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
 
     }
 
@@ -269,7 +277,7 @@ p {
 
 
 @media only screen and (max-width: 1000px) {
-    
+
     ul {
         margin-top: 100px;
     }

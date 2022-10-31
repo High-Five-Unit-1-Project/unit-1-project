@@ -25,7 +25,6 @@ header {
 
 body {
     height: 100%;
-    /*background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));*/
     background-color: #EBE8E3;
 }
 
@@ -96,7 +95,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #9F948E;
     flex-wrap: wrap;
     color:white;
 }
@@ -220,7 +219,6 @@ footer {
         display: flex;
         width: 100%;
         height: auto;
-        background-color: black;
         flex-wrap: wrap;
     }
 

@@ -33,8 +33,37 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px;
   box-sizing: border-box; }
+
+  footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: black;
+}
+#sec1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+#sec1 a {
+    padding-bottom: 3px;
+    cursor: pointer;
+    color: white;
+}
+#sec2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5% 10px 5%;
+}
+
+
 .column,
 .columns {
   width: 100%;
@@ -59,6 +88,7 @@
   .columns:first-child {
     margin-left: 0; }
 
+ 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
@@ -76,7 +106,10 @@
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%; }
+  .one-half.column                { width: 48%;
+  background-image: cover; }
+
+
 
   /* Offsets */
   .offset-by-one.column,
@@ -122,10 +155,14 @@ html {
   font-size: 62.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;  color: white;
+  background-image: linear-gradient(to top right, rgb(119, 8, 22), rgb(255, 0, 45), rgb(119, 8, 22));
+  justify-content: end;
+  text-align: center;
+  margin: 0px;
+ }
 
 
 /* Typography
@@ -364,12 +401,16 @@ form {
   box-sizing: border-box; }
 .u-max-full-width {
   max-width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+ }
 .u-pull-right {
   float: right; }
 .u-pull-left {
   float: left; }
 
+  .photos {
+    column-gap:           0px;  
+  }
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -416,3 +457,4 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+

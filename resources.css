@@ -18,8 +18,6 @@ a:hover {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 8fr;
     position: sticky;
     top: 0;
     width: 100%;

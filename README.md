@@ -1,6 +1,6 @@
 # High-Five Unit 1 Project
 
-Informing the user on detrimental effect the fast-fashion industry has on the environment, society, and how this impacts marginalized communities.
+This is a team developed website devoted to educating users on the negative effects of fast fashion on the environment. Working on this we researched the effects of capitalism on the environment and marginalized communities, and its direct impact on the fashion industry, as well as what steps we can take towards change. Technologies used: Figma, HTML, CSS, Bootstrap.
 Website: http://127.0.0.1:5500/index.html
 
 ## Team
